@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dispensador()
+comment1.params=teclado\ precio\ contenedor\ habilitado
+comment1.target=Dispensador(java.util.Scanner,\ Precios,\ Contenedor,\ boolean)
+comment2.params=habilitado
+comment2.target=void\ setHabilitado(boolean)
+comment3.params=
+comment3.target=boolean\ isHabilitado()
+comment4.params=
+comment4.target=void\ errorCantidadBencina()
+comment5.params=
+comment5.target=void\ menuCarga()
+comment5.text=\n\ Method\ menuCarga\n\ \n\ Genera\ un\ menu\ de\ carga\ que\ puede\ manipular\ el\ usuario\ de\ la\ maquina.\n\n
+numComments=6

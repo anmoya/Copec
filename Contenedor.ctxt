@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Contenedor()
+comment1.params=b97oc\ b95oc\ b93oc\ diesel
+comment1.target=Contenedor(double,\ double,\ double,\ double)
+comment10.params=
+comment10.target=void\ nivelesCombustibles()
+comment2.params=b97oc
+comment2.target=void\ setB97(double)
+comment3.params=b95oc
+comment3.target=void\ setB95(double)
+comment4.params=b93oc
+comment4.target=void\ setB93(double)
+comment5.params=diesel
+comment5.target=void\ setDiesel(double)
+comment6.params=
+comment6.target=double\ getB97()
+comment7.params=
+comment7.target=double\ getB95()
+comment8.params=
+comment8.target=double\ getB93()
+comment9.params=
+comment9.target=double\ getDiesel()
+numComments=11
