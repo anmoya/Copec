@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Administracion()
+comment1.params=teclado
+comment1.target=Administracion(java.util.Scanner)
+comment2.params=usuario\ clave
+comment2.target=void\ panelAdministracion(java.lang.String,\ java.lang.String)
+numComments=3

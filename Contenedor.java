@@ -7,10 +7,10 @@ import java.util.Scanner;
  */
 public class Contenedor
 {
-    private double b97oc; //bencina 97 octanos
-    private double b95oc; //bencina 97 octanos
-    private double b93oc; //bencina 97 octanos
-    private double diesel; //diesel
+    private float b97oc; //bencina 97 octanos
+    private float b95oc; //bencina 97 octanos
+    private float b93oc; //bencina 97 octanos
+    private float diesel; //diesel
 
     public Contenedor(){
         b97oc=0;
@@ -19,7 +19,7 @@ public class Contenedor
         diesel=0;
     }
 
-    public Contenedor(double b97oc, double b95oc, double b93oc, double diesel){
+    public Contenedor(float b97oc, float b95oc, float b93oc, float diesel){
         setB97(b97oc);
         setB95(b95oc);
         setB93(b93oc);
@@ -27,36 +27,52 @@ public class Contenedor
     }
 
     //setters
-    public void setB97(double b97oc){
-        this.b97oc=b97oc;
+    public void setB97(float b97oc){
+        if (b97oc<1){
+            System.out.println("Debe ser un valor mayor a 0");
+        } else {
+            this.b97oc=b97oc;
+        }
     }
 
-    public void setB95(double b95oc){
-        this.b95oc=b95oc;
+    public void setB95(float b95oc){
+        if (b95oc<1){
+            System.out.println("Debe ser un valor mayor a 0");
+        } else {
+            this.b95oc=b95oc;
+        }
     }
 
-    public void setB93(double b93oc){
-        this.b93oc=b93oc;
+    public void setB93(float b93oc){
+        if (b93oc<1){
+            System.out.println("Debe ser un valor mayor a 0");
+        } else {
+            this.b93oc=b93oc;
+        }
     }
 
-    public void setDiesel(double diesel){
-        this.diesel=diesel;
+    public void setDiesel(float diesel){
+        if (diesel<1){
+            System.out.println("Debe ser un valor mayor a 0");
+        } else {
+            this.diesel=diesel;
+        }
     }
 
     //getters
-    public double getB97(){
+    public float getB97(){
         return b97oc;
     }
 
-    public double getB95(){
+    public float getB95(){
         return b95oc;
     }
 
-    public double getB93(){
+    public float getB93(){
         return b93oc;
     }
 
-    public double getDiesel(){
+    public float getDiesel(){
         return diesel;
     }
 
@@ -68,23 +84,4 @@ public class Contenedor
         System.out.println("93 oct - "+b93oc);
         System.out.println("Diesel - "+diesel);
     }
-
-    //     public void usarReserva(){
-    //         if (b97oc < 101 || b95oc < 101 || b93oc < 101 || diesel < 101){
-    //             String respuesta="SI";
-    //             do {
-    //                 System.out.println("Desea usar reserva?");
-    //                 respuesta=teclado.nextLine();
-    //             } while (!(respuesta.trim().toUpperCase().equals("SI"))||(!(respuesta.trim().toUpperCase().equals("NO"))));
-    //             if (respuesta.trim().toUpperCase().equals("SI")){
-    //                 b97oc=b97oc+200;
-    //                 b95oc=b95oc+200;
-    //                 b93oc=b93oc+200;
-    //                 diesel=diesel+200;
-    //             } else {
-    //                 System.out.println("No ha usado la reserva");
-    //             }
-    //         }
-    // 
-    //     } 
 }
