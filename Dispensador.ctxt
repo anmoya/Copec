@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Dispensador()
-comment1.params=administracion\ teclado\ precio\ contenedor\ habilitado
-comment1.target=Dispensador(Administracion,\ java.util.Scanner,\ Precios,\ Contenedor,\ boolean)
+comment1.params=teclado\ precio\ contenedor\ habilitado
+comment1.target=Dispensador(java.util.Scanner,\ Precios,\ Contenedor,\ boolean)
 comment2.params=habilitado
 comment2.target=void\ setHabilitado(boolean)
 comment3.params=
@@ -14,4 +14,10 @@ comment5.target=void\ metodoCarga()
 comment6.params=
 comment6.target=void\ menuCarga()
 comment6.text=\r\n\ menuCarga\r\n\ Permite\ que\ el\ usuario\ ingrese\ una\ cantidad\ de\ dinero\ (carga),\ \r\n\r\n
-numComments=7
+comment7.params=usuario\ clave
+comment7.target=void\ panelAdministracion(java.lang.String,\ java.lang.String)
+comment8.params=
+comment8.target=void\ menuJueves()
+comment9.params=
+comment9.target=void\ opcionApagar()
+numComments=10

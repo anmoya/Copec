@@ -33,19 +33,35 @@ public class Precios
     }
 
     public void setPrecio93(float precio93){
-        this.precio93=precio93;
+        if (precio93 > 0) {
+            this.precio93=precio93;
+        } else {
+            System.out.println("Debe ser mayor que 0");
+        }
     }
 
     public void setPrecio95(float precio95){
-        this.precio95=precio95;
+        if (precio95 > 0) {
+            this.precio95=precio95;
+        } else {
+            System.out.println("Debe ser mayor que 0");
+        }
     }
 
     public void setPrecio97(float precio97){
-        this.precio97=precio97;
+        if (precio97 > 0) {
+            this.precio97=precio97;
+        } else {
+            System.out.println("Debe ser mayor que 0");
+        }
     }
 
     public void setPrecioDiesel(float pDiesel){
-        this.pDiesel=pDiesel;
+        if (pDiesel > 0) {
+            this.pDiesel=pDiesel;
+        } else {
+            System.out.println("Debe ser mayor que 0");
+        }
     }
 
     public void setJueves(boolean jueves){
@@ -132,13 +148,13 @@ public class Precios
             precio93=(int)Math.round(precio93+(precio93*0.02));
             precio95=(int)Math.round(precio95+(precio95*0.03));
             precio97=(int)Math.round(precio97+(precio97*0.025));
-            pDiesel=(int)Math.round(pDiesel+(pDiesel*0.1));
+            pDiesel=(int)Math.round(pDiesel+(pDiesel*0.01));
         }
         if (jueves && valor.trim().toUpperCase().equals("BAJA")) {
             precio93=(int)Math.round(precio93-(precio93*0.02));
             precio95=(int)Math.round(precio95-(precio95*0.03));
             precio97=(int)Math.round(precio97-(precio97*0.025));
-            pDiesel=(int)Math.round(pDiesel-(pDiesel*0.1));
+            pDiesel=(int)Math.round(pDiesel-(pDiesel*0.01));
         }
     }
 

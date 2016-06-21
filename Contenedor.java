@@ -28,7 +28,7 @@ public class Contenedor
 
     //setters
     public void setB97(float b97oc){
-        if (b97oc<1){
+        if (b97oc<0){
             System.out.println("Debe ser un valor mayor a 0");
         } else {
             this.b97oc=b97oc;
@@ -36,7 +36,7 @@ public class Contenedor
     }
 
     public void setB95(float b95oc){
-        if (b95oc<1){
+        if (b95oc<0){
             System.out.println("Debe ser un valor mayor a 0");
         } else {
             this.b95oc=b95oc;
@@ -44,7 +44,7 @@ public class Contenedor
     }
 
     public void setB93(float b93oc){
-        if (b93oc<1){
+        if (b93oc<0){
             System.out.println("Debe ser un valor mayor a 0");
         } else {
             this.b93oc=b93oc;
@@ -52,7 +52,7 @@ public class Contenedor
     }
 
     public void setDiesel(float diesel){
-        if (diesel<1){
+        if (diesel<0){
             System.out.println("Debe ser un valor mayor a 0");
         } else {
             this.diesel=diesel;
@@ -79,9 +79,9 @@ public class Contenedor
     //imprimir
     public void nivelesCombustibles(){
         System.out.println("Tipo   - Litros");
-        System.out.println("97 oct - "+b97oc);
-        System.out.println("95 oct - "+b95oc);
         System.out.println("93 oct - "+b93oc);
+        System.out.println("95 oct - "+b95oc);
+        System.out.println("97 oct - "+b97oc);
         System.out.println("Diesel - "+diesel);
     }
 }
